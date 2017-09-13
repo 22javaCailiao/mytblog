@@ -1,13 +1,10 @@
-from flask import Flask
+# coding:utf-8
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello_world():
-    return 'Hello World'
-
-
+from app import app
 
 if __name__ == '__main__':
+    """
+    项目总入口
+    """
+    app.logger.info(">>>>>>>>>>>>>>>>>>>>> myt_blog init <<<<<<<<<<<<<")
     app.run()
